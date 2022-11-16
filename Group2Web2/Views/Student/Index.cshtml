@@ -1,0 +1,16 @@
+﻿@model List<Studenti>
+Lista e Studenteve
+<h1>Studentet me te forte</h1>
+<table class="table table-bordered" >
+    <tr>
+        <th>Emri</th>
+        <th>Mbiemri</th>
+    </tr>
+    @foreach (Studenti stu in Model)
+    {
+        <tr>
+            <td>@stu.Emri</td>
+            <td>@stu.Mbiemri</td>
+        </tr>
+    }
+</table>
